@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+    @apply font-Sing
+    scroll-smooth	
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* navbar */
+.navbar {
+    @apply  bg-neutral-500 w-screen h-auto border-solid p-1 
+}
+    
+.container {
+    @apply flex justify-between items-center 
+}
+.logoImage {
+    @apply flex items-center space-x-1 space-y-0
+}
+.logo {
+    @apply w-9 h-14 
+} 
+.tittle {
+    @apply font-bold text-3xl 
+} 
+.secondTittle {
+    @apply text-white font-bold text-3xl
+}  
+.btn {
+    @apply  mb-1 rounded-3xl w-32 h-12  
+    bg-neutral-300 hover:bg-sky-700 
+    text-black text-xl 
+}  
+.navMenu {
+    @apply flex sm:absolute sm:flex sm:flex-col sm:items-center 
+    sm:top-24
+    sm:h-full sm:w-full sm:right-full 
+    
+}
+.navMenulist {
+    @apply flex sm:absolute sm:flex sm:flex-col sm:items-center 
+    sm:top-24 sm:right-[-100px]
+    sm:h-[500px] sm:w-full 
+    sm:right-px sm:bg-slate-300 sm:mt-[-30px]
+    sm:transition ease-out duration-300
+    sm:z-50
+
+}
+
+.li {
+    @apply p-4 font-bold text-white text-xl sm:text-black
+} 
+.hamburger {
+    @apply hidden sm:block sm:mr-4 sm:scale-125 sm:text-blue-400
+}
+
+/*   
+  Hero section 
+*/
+
+.hero {
+@apply flex flex-col justify-center items-center relative w-full h-[650px] 
+ 
+
+ xl:h-[800px] xxl:h-[1050px] 
+
+}
+
+.img-hero {
+    @apply absolute inset-0 h-full w-full object-cover 
+}
+
+.bg-opacity-editing{
+    @apply absolute w-full h-full text-center bg-gray-800 opacity-70
+}
+.tittle-hero {
+    @apply text-2xl text-white font-bold mt-[252px] xl:mt-[300px] xl-2:mt-[322px]
+}
+.search-text{
+@apply mt-4 text-lg text-gray-300 sm:text-lg  z-10 
+}
+.search {
+    @apply flex  justify-between items-center bg-white p-2 
+    rounded-2xl w-[600px] mt-4  z-10 mt-[60px] 
+     sm:w-[410px] xs:w-[200px]
+   
+}
+.search-bar {
+   @apply w-[300px] z-10 sm:w-[250px]
+}
+.label-hero{
+  @apply  m-2
+
+}
+.icon {
+   @apply relative top-1 bg-slate-300 w-6 h-5 rounded-2xl
+}
+.content-list {
+    @apply bg-slate-300
+}
+.our-sale {
+    @apply font-bold flex items-center justify-center text-3xl pt-8 pb-4
+}
+.card-container {
+   @apply flex flex-wrap justify-center content-start 
+}
+.card{
+    @apply border-solid rounded-lg  border-4 border-cyan-300 bg-blue-100 pb-[52px] p-2 m-2	hover:scale-110  transition ease-in duration-300 
+}
+.house-img {
+    @apply w-64 h-full  
+}
+
+.house-info {
+    @apply font-bold text-lg ml-1 
+}
+.house-price {
+    @apply font-bold text-lg italic 
+}
+
+/* Contact */
+
+.contact {
+    @apply w-full h-[350px] bg-slate-200
+}
+
+.tittle-contact {
+    @apply flex items-center justify-center font-bold text-3xl pt-8 pb-6
+}
+.form-contact {
+    @apply flex justify-center items-center flex-wrap mt-4 
+}
+.contact input {
+    @apply w-[500px] h-10 border-solid rounded-lg  border-4 m-2
+}
+
+/* Footer */
+
+.social {
+    @apply flex justify-center items-center space-x-4 pt-2 pb-2
+}
+Footer .container {
+    @apply flex 
 }
